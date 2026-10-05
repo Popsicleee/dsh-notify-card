@@ -1,0 +1,11 @@
+# dsh-notify-card — DSH bundle patch
+#
+# 把本插件插入 profile 的配置树。DSH 启动（或热重载）时按 bundle 层栈叠加各插件 patch。
+#
+# 安装：
+#   dsh plugin --profile <profile> add link:<本目录绝对路径>
+# 或在 Web 界面的 Plugins 页面 / plugin_manager 工具里安装本目录（绝对路径）。
+
+- insert:
+    - id: dsh-notify-card
+      name: dsh-notify-card

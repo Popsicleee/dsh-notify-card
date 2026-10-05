@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Desktop notification cards",
+    "description": "Pops a summary card on the Windows desktop after each conversation turn, and another while a session is waiting for your approval or answer. Click a card to jump to that conversation; it disappears once you have answered."
+  }
+}

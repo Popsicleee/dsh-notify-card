@@ -1,0 +1,55 @@
+{
+  "name": "dsh-notify-card",
+  "version": "0.7.4",
+  "description": "DSH 插件：每轮对话结束后在 Windows 桌面弹出卡片摘要；会话卡在等授权/等选择时也弹卡片（可点击跳转、处理完自动消失）。宿主半边与设置页在同一个包里。 / Windows desktop notification cards for DSH: a summary card after each turn, plus a card while a session waits for your approval or answer.",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "deepseek",
+    "windows",
+    "notification",
+    "toast",
+    "notification-card",
+    "settings"
+  ],
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./locale/*.json": "./locale/*.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "assets",
+    "locale/*.json",
+    "cordis.patch.yml",
+    "README.md",
+    "selftest.ps1"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "os": [
+    "win32"
+  ],
+  "author": "P0ps1cle",
+  "license": "MIT"
+}
